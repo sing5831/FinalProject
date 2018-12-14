@@ -11,6 +11,7 @@ namespace FinalProject.Models
         public string Email { get; set; }
     }
 
+    //created login view list
     public class ExternalLoginListViewModel
     {
         //Creating a getter and setter method for return url
