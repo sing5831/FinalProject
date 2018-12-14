@@ -12,6 +12,7 @@ namespace FinalProject.Models
     }
 
     //created login view list
+    //created 
     public class ExternalLoginListViewModel
     {
         //Creating a getter and setter method for return url
