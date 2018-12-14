@@ -1,0 +1,52 @@
+﻿@model IEnumerable<FinalProject.Models.OrderDetails>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Order Details</h1>
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.menu.item)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.order.id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.qtyOrdered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.orderDueDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.menu.item)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.order.id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.qtyOrdered)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.orderDueDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

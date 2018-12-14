@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Restaurant App</h1>
+    <p>Indian Restaurant. Save time by ordering Online at our App</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Regular Customer</h2>
+        <p>
+            If you are a returning customer, you can Login and proceed your Order.
+            <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>New Customers</h2>
+        <p>Customers using this app for the first time should Register first to proceed their order</p>
+        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+    </div>
+   
+</div>
