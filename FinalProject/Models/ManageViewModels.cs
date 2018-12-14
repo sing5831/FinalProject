@@ -7,6 +7,7 @@ namespace FinalProject.Models
 {
     public class IndexViewModel
     {
+        //Getter and Setter
         public bool HasPassword { get; set; }
         public IList<UserLoginInfo> Logins { get; set; }
         public string PhoneNumber { get; set; }
@@ -16,6 +17,7 @@ namespace FinalProject.Models
 
     public class ManageLoginsViewModel
     {
+        //Getter and Setter
         public IList<UserLoginInfo> CurrentLogins { get; set; }
         public IList<AuthenticationDescription> OtherLogins { get; set; }
     }

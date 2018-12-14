@@ -7,6 +7,7 @@ namespace FinalProject.Models
 {
     public class Customer
     {
+        //Getter and Setter for id , email , name
         public int id { get; set; }
         public string name { get; set; }
         public string email { get; set; }

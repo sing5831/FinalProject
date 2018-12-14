@@ -13,6 +13,7 @@ namespace FinalProject.Controllers
     [Authorize]
     public class ManageController : Controller
     {
+        //Making Field Variables for signin and user Manager
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -22,6 +23,7 @@ namespace FinalProject.Controllers
 
         public ManageController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
+            //Initiliazing the user and sign in manager
             UserManager = userManager;
             SignInManager = signInManager;
         }

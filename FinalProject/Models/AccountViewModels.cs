@@ -5,6 +5,7 @@ namespace FinalProject.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
+        //Creating a getter and setter method for email
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
@@ -12,11 +13,13 @@ namespace FinalProject.Models
 
     public class ExternalLoginListViewModel
     {
+        //Creating a getter and setter method for return url
         public string ReturnUrl { get; set; }
     }
 
     public class SendCodeViewModel
     {
+        //Creating a getter and setter method
         public string SelectedProvider { get; set; }
         public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
         public string ReturnUrl { get; set; }
@@ -25,6 +28,7 @@ namespace FinalProject.Models
 
     public class VerifyCodeViewModel
     {
+        //Getter and Setter Method
         [Required]
         public string Provider { get; set; }
 
@@ -41,6 +45,7 @@ namespace FinalProject.Models
 
     public class ForgotViewModel
     {
+        //Getter and Setter Method 
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
@@ -48,6 +53,7 @@ namespace FinalProject.Models
 
     public class LoginViewModel
     {
+        //Getter and Setter Method for email and password 
         [Required]
         [Display(Name = "Email")]
         [EmailAddress]
@@ -64,6 +70,7 @@ namespace FinalProject.Models
 
     public class RegisterViewModel
     {
+        //Getter and Setter Method for email and password
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
