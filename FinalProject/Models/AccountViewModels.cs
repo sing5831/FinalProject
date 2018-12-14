@@ -17,6 +17,7 @@ namespace FinalProject.Models
         public string ReturnUrl { get; set; }
     }
 
+    //class second code
     public class SendCodeViewModel
     {
         //Creating a getter and setter method
